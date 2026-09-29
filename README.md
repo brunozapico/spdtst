@@ -14,18 +14,25 @@
 - **Open:** MIT-licensed project code and no dependency on a proprietary test client.
 - **Scriptable:** use JSON output or save newline-delimited JSON locally.
 
-## Install from GitHub
+## Install
 
-Use [pipx](https://pipx.pypa.io/) to install the command in an isolated environment:
+Use [pipx](https://pipx.pypa.io/) to install the current release in an isolated environment:
+
+```bash
+pipx install https://github.com/brunozapico/spdtst/releases/download/v0.1.0/spdtst-0.1.0-py3-none-any.whl
+```
+
+Homebrew users can install the same release with:
+
+```bash
+brew tap brunozapico/tap
+brew install spdtst
+```
+
+To install directly from the repository instead:
 
 ```bash
 pipx install git+https://github.com/brunozapico/spdtst.git
-```
-
-Or, from a clone of this repository:
-
-```bash
-python -m pip install .
 ```
 
 Verify the installation:
