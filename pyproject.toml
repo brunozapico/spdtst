@@ -24,9 +24,9 @@ classifiers = [
 spdtst = "spdtst.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/brunozapico/speed_tester"
-Repository = "https://github.com/brunozapico/speed_tester"
-Issues = "https://github.com/brunozapico/speed_tester/issues"
+Homepage = "https://github.com/brunozapico/spdtst"
+Repository = "https://github.com/brunozapico/spdtst"
+Issues = "https://github.com/brunozapico/spdtst/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

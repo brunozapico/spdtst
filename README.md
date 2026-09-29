@@ -19,7 +19,7 @@
 Use [pipx](https://pipx.pypa.io/) to install the command in an isolated environment:
 
 ```bash
-pipx install git+https://github.com/brunozapico/speed_tester.git
+pipx install git+https://github.com/brunozapico/spdtst.git
 ```
 
 Or, from a clone of this repository:

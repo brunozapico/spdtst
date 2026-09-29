@@ -9,7 +9,7 @@ The repository is ready to build a Python source distribution and wheel. The Git
 One-time setup before the first release:
 
 1. Create the `spdtst` project on [PyPI](https://pypi.org/).
-2. In its publishing settings, configure Trusted Publishing for the `brunozapico/speed_tester` repository, the `publish-pypi.yml` workflow, and the `pypi` environment.
+2. In its publishing settings, configure Trusted Publishing for the `brunozapico/spdtst` repository, the `publish-pypi.yml` workflow, and the `pypi` environment.
 3. Create and publish a GitHub Release whose tag matches the version in `pyproject.toml`, for example `v0.1.0`.
 
 No API token needs to be stored in the repository when Trusted Publishing is configured. After that release completes, users can install the public package with:

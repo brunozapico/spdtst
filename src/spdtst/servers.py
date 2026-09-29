@@ -13,7 +13,7 @@ import truststore
 from .models import Server
 
 SERVER_LIST_URL = "https://librespeed.org/backend-servers/servers.php"
-USER_AGENT = "spdtst/0.1 (+https://github.com/brunozapico/speed_tester)"
+USER_AGENT = "spdtst/0.1 (+https://github.com/brunozapico/spdtst)"
 SSL_CONTEXT = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
 
 
