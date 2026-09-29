@@ -9,13 +9,13 @@ description = "A small, private-by-default internet speed test CLI."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = ["truststore>=0.10,<1"]
-license = {file = "LICENSE"}
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{name = "Bruno Zapico"}]
 keywords = ["speedtest", "cli", "network", "internet"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Environment :: Console",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
 ]
