@@ -19,7 +19,7 @@
 Use [pipx](https://pipx.pypa.io/) to install the current release in an isolated environment:
 
 ```bash
-pipx install https://github.com/brunozapico/spdtst/releases/download/v0.1.0/spdtst-0.1.0-py3-none-any.whl
+pipx install spdtst
 ```
 
 Homebrew users can install the same release with:
@@ -29,9 +29,10 @@ brew tap brunozapico/tap
 brew install spdtst
 ```
 
-To install directly from the repository instead:
+To install a specific GitHub release or directly from the repository instead:
 
 ```bash
+pipx install https://github.com/brunozapico/spdtst/releases/download/v0.1.0/spdtst-0.1.0-py3-none-any.whl
 pipx install git+https://github.com/brunozapico/spdtst.git
 ```
 

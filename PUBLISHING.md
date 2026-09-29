@@ -2,19 +2,19 @@
 
 This file is for maintainers. It is deliberately kept out of the user-facing README.
 
-The public `v0.1.0` release is distributed from GitHub Releases and through the `brunozapico/tap` Homebrew tap. The release workflow builds the source distribution and universal wheel after each push and validates the project on Python 3.10–3.13.
+The public `v0.1.0` release is distributed through [PyPI](https://pypi.org/project/spdtst/), GitHub Releases, and the `brunozapico/tap` Homebrew tap. The release workflow builds the source distribution and universal wheel after each push and validates the project on Python 3.10–3.13.
 
 ## PyPI
 
-The repository is ready to build a Python source distribution and wheel. The GitHub Actions workflow in `.github/workflows/publish-pypi.yml` publishes both when a GitHub Release is published, but it is intentionally disabled until PyPI Trusted Publishing is configured. This avoids a failed release job or accidental package claim.
+The repository uses [PyPI Trusted Publishing](https://docs.pypi.org/trusted-publishers/) with the `brunozapico/spdtst` GitHub repository, the `publish-pypi.yml` workflow, and the `pypi` environment. No PyPI API token is stored in the repository.
 
-One-time setup before the first release:
+For a future release:
 
-1. Sign in to [PyPI](https://pypi.org/) as the intended package owner and configure a **pending publisher** for project `spdtst`, owner `brunozapico`, repository `spdtst`, workflow `publish-pypi.yml`, and environment `pypi`.
-2. In the GitHub repository's Actions variables, set `PYPI_PUBLISH_ENABLED` to `true`.
-3. Run the **Publish to PyPI** workflow manually from the Actions tab. The `v0.1.0` tag is already available.
+1. Update the version in `pyproject.toml` and `src/spdtst/__init__.py`.
+2. Merge the change, tag the matching commit, and create a published GitHub Release.
+3. The **Publish to PyPI** workflow runs automatically and publishes the matching package.
 
-No API token needs to be stored in the repository when Trusted Publishing is configured. After that release completes, users can install the public package with:
+Users install the public package with:
 
 ```bash
 pipx install spdtst
