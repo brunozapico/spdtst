@@ -1,0 +1,24 @@
+class Spdtst < Formula
+  include Language::Python::Virtualenv
+
+  desc "Small, private-by-default internet speed test"
+  homepage "https://github.com/brunozapico/speed_tester"
+  url "https://github.com/brunozapico/speed_tester/archive/refs/tags/vVERSION.tar.gz"
+  sha256 "REPLACE_WITH_RELEASE_TARBALL_SHA256"
+  license "MIT"
+
+  depends_on "python@3.13"
+
+  resource "truststore" do
+    url "REPLACE_WITH_TRUSTSTORE_SOURCE_URL"
+    sha256 "REPLACE_WITH_TRUSTSTORE_SHA256"
+  end
+
+  def install
+    virtualenv_install_with_resources
+  end
+
+  test do
+    assert_match "spdtst", shell_output("#{bin}/spdtst --version")
+  end
+end

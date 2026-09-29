@@ -110,9 +110,3 @@ spdtst implements its client protocol itself with Python's standard library. It 
 The spdtst source code is available under the [MIT License](LICENSE).
 
 This is an independent project and is not affiliated with LibreSpeed or Ookla.
-
-## Roadmap
-
-- Publish the package on PyPI.
-- Add release automation and platform checks.
-- Improve server selection with geographic diversity and health information.
